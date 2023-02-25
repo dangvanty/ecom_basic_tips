@@ -1,0 +1,30 @@
+{
+  "name": "hoivien_tip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangvanty/ecom_basic_tips.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dangvanty/ecom_basic_tips/issues"
+  },
+  "homepage": "https://github.com/dangvanty/ecom_basic_tips#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "compression": "^1.7.4",
+    "helmet": "^6.0.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}
