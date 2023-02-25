@@ -1,0 +1,12 @@
+PORT = 3055
+NODE_ENV = 
+
+DEV_APP_HOST = 3055
+DEV_DB_HOST = 'localhost'
+DEV_DB_NAME = 'shopDev'
+DEV_DB_PORT = 27017
+
+PRO_APP_HOST = 3059
+PRO_DB_HOST = 'localhost'
+PRO_DB_NAME = 'shopDev'
+PRO_DB_PORT = 27017
