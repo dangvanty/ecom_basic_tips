@@ -13,3 +13,19 @@ graph
   H --> |yes| L[tạo token gồm assest token và refresh token từ privateKey với JWT]
   L --> M[trả về mã code 201, token và data new shop]
 ```
+
+### flow check apikey: 
+
+```mermaid
+graph 
+  A[truy cập router] --> B{check header có \n api key = <b>x-api-key</b> ko ??}
+  B --> |no| C[trả về lỗi vs mã 403 forbidden]
+  B --> |yes| D{tìm kiếm apikey theo value \ntừ <b>x-api-key</b> trên header\n truyền gửi lên mỗi request}
+  D --> |no| C
+  D --> |yes| E[trả về apikey tìm được vào resquest]
+  E --> F{check api có quyền ko??}
+  F --> |không có n| C
+  F --> |có| K{check quyền quy định có trong api đó ko? }
+  K --> |không| C
+  K --> |có| L[cho phép các lồng sau]
+```
