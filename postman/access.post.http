@@ -20,3 +20,12 @@ x-api-key: 535affdb077d72d047988dd82b3cee57d85a9394f960df887319f795e0dcdc9b9e81c
   "email": "shoptip09p0800@gmail.com",
   "password":"abcde123"
 }
+### logout
+POST {{url_dev}}/shop/logout
+x-api-key: 535affdb077d72d047988dd82b3cee57d85a9394f960df887319f795e0dcdc9b9e81c2b1ff9c2cb048e813dcbaed09b533f5420661bbdce8397660fc2352e660
+x-client-id: 641352f133519ab0293df5fe
+authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDEzNTJmMTMzNTE5YWIwMjkzZGY1ZmUiLCJlbWFpbCI6InNob3B0aXAwOXAwODAwQGdtYWlsLmNvbSIsImlhdCI6MTY3OTU2OTg1NCwiZXhwIjoxNjc5NzQyNjU0fQ.MqgWaB3qEiOuJVk36_jd-Bn1160gJ49ftU4E38egR9s
+
+{
+
+}

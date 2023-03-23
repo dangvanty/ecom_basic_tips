@@ -1,5 +1,6 @@
 'use strict'
 
+const { Types } = require("mongoose")
 const keytokenModel = require("../models/keytoken.model")
 
 class KeyTokenService {
@@ -24,6 +25,14 @@ class KeyTokenService {
       return error
     }
   }
+
+  static findByUserId = async(userId)=>{
+    return await keytokenModel.findOne({user: Types.ObjectId(userId)}).lean()
+  }
+  static removeKeyById = async (id)=>{
+    return await keytokenModel.deleteOne(id)
+  } 
+
 }
 
 module.exports = KeyTokenService
